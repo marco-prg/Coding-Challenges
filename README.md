@@ -1,2 +1,2 @@
 # LeetCode
-LeetCode solved problems
+[LeetCode](https://leetcode.com/) solved problems
