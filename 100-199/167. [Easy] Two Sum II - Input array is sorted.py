@@ -15,3 +15,6 @@ class Solution:
                 right -= 1
             else:
                 left += 1
+
+
+# Array - Two Pointers - Binary Search

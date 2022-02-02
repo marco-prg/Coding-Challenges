@@ -8,3 +8,6 @@ class Solution:
             result.append(result[i >> 1] + i % 2)
         
         return result
+
+
+# Dynamic Programming - Bit Manipulation

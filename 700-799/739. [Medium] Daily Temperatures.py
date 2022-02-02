@@ -8,7 +8,6 @@ class Solution:
         stack = []
         
         for i,v in enumerate(temperatures):
-            # Approach 1: Monotonic Stack
             # Pop until the current day's temperature is not warmer than the temperature at the top of the stack
             while stack and temperatures[stack[-1]] < v:
                 prev_i = stack.pop()
@@ -17,3 +16,6 @@ class Solution:
             stack.append(i)
         
         return answer
+
+
+# Array - Stack - Monotonic Stack

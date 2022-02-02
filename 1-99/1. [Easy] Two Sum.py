@@ -13,3 +13,6 @@ class Solution:
             seen[v] = i
         
         return [-1]
+
+
+# Array - Hash Table
