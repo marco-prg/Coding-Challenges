@@ -11,13 +11,13 @@ class Solution:
         result = []
         
         for k,v in enumerate(groupSizes):
-            if groups.get(v):
-                groups[v].append(k)
-            else:
-                groups[v] = [k]            
+            groups[v] = groups.get(v, []) + [k]           
             
             if len(groups[v]) == v:
                 result.append(groups[v])
                 del groups[v]
         
         return result
+
+
+# Array - Hash Table

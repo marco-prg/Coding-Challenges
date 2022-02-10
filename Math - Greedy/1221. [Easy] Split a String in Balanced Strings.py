@@ -11,3 +11,6 @@ class Solution:
                 result += 1
                 l, r = 0, 0
         return result
+
+
+# String - Greedy - Counting

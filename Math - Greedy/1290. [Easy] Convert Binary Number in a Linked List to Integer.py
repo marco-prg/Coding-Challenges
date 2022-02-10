@@ -16,3 +16,6 @@ class Solution:
             result = result * 2 + head.val
             head = head.next
         return result
+
+
+# Linked List - Math

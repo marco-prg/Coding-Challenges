@@ -18,3 +18,6 @@ class Solution:
     def numUniqueEmails(self, emails: List[str]) -> int:
         emails = [mail.split('@')[0].replace('.', '').split('+')[0] + '@' + mail.split('@')[1] for mail in emails]
         return len(set(emails))
+
+
+# Array - Hash Table - String

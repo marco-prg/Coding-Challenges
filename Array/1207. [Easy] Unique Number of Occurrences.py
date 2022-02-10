@@ -5,4 +5,7 @@ import collections
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
         a = collections.Counter(collections.Counter(arr).values()).values()
-        return sum(a) / len(a) == 1
+        return sum(a) == len(a)
+
+
+# Array - Hash Table
