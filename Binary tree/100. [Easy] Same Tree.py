@@ -23,3 +23,6 @@ class Solution:
             return True
         
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
+
+# Tree - Depth-First Search - Breadth-First Search - Binary Tree

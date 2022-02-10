@@ -21,3 +21,6 @@ class Solution:
         
         left.extend(self.inorderTraversal(root.right))
         return left
+
+
+# Stack - Tree - Depth-First Search - Binary Tree
