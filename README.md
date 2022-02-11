@@ -1,5 +1,5 @@
 # Coding Challenges
-Coding challenges grouped by topic (WIP)
+Solved coding challenges grouped by topic (WIP)
 
 References:
 * [LeetCode](https://leetcode.com/)
