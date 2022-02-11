@@ -15,3 +15,6 @@ class Solution:
             # can be optimized by early checking condition result >= n to return True
         
         return result >= n
+
+
+# Array - Greedy

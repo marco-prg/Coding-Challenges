@@ -4,3 +4,6 @@
 SELECT class FROM
 (SELECT count(distinct(student)) as counter, class FROM courses GROUP BY class) AS t
 WHERE counter >= 5;
+
+
+-- Database

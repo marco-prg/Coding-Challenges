@@ -8,13 +8,16 @@
 
 class Solution:
     def fib(self, n: int) -> int:
-        if n in (0, 1):
+        if n < 2:
             return n
         
-        the_old = 1
-        the_one = 1
+        old = 1
+        ans = 1
         
-        for i in range(2, n):
-            the_one, the_old = the_old + the_one, the_one
+        for _ in range(2, n):
+            ans, old = old + ans, ans
             
-        return the_one
+        return ans
+
+
+# Math - Dynamic Programming - Recursion - Memoization

@@ -24,3 +24,6 @@ class Solution:
                 record.append(int(op))
         
         return sum(record)
+
+
+# Array - Stack - Simulation

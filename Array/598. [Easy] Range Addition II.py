@@ -7,5 +7,10 @@ class Solution:
         if not ops:
             return m * n
 
-        r, c = zip(*ops)
-        return min(r) * min(c)
+        # The * operator unpacks arguments in a function invocation statement -> repacking in row e col value arrays
+        row, col = zip(*ops)
+        # Matrix values after increments don't matter, we want the minimum submatrix (row, col) -> row * col = number of maximum integers
+        return min(row) * min(col)
+
+
+# Array - Math

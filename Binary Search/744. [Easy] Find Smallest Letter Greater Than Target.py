@@ -20,3 +20,6 @@ class Solution:
         # r = bisect.bisect(letters, target)
         
         return letters[r % len(letters)]
+
+
+# Array - Binary Search

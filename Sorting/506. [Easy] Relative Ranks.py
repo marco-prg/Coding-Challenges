@@ -15,3 +15,6 @@ class Solution:
         p = {1: "Gold Medal", 2: "Silver Medal", 3: "Bronze Medal"}
         result = {v: p.get(k+1) or str(k+1) for k,v in enumerate(sorted(score, reverse=True))}
         return [result.get(s) for s in score]
+
+
+# Array - Sorting - Heap (Priority Queue)

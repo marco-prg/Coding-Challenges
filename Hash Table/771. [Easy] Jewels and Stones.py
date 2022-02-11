@@ -8,3 +8,6 @@ class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
         C = collections.Counter(S)
         return sum([C[j] for j in J])
+
+
+# Hash Table - String

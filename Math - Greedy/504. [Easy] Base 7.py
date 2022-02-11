@@ -16,3 +16,6 @@ class Solution:
             num = num // 7
         
         return result if positive else f"-{result}"
+
+
+# Math

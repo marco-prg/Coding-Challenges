@@ -4,7 +4,10 @@
 
 class Solution:
     def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
-        dict1 = { v : k for k,v in enumerate(list1) }
-        dict2 = { v : k + dict1[v] for k,v in enumerate(list2) if v in dict1.keys() }
+        d = { v : k for k,v in enumerate(list1) }
+        d = { v : k + d[v] for k,v in enumerate(list2) if v in d.keys() }
                 
-        return [ v for v in dict2.keys() if dict2[v] == min(dict2.values()) ]
+        return [ v for v in d.keys() if d[v] == min(d.values()) ]
+
+
+# Array - Hash Table - String

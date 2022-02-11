@@ -15,7 +15,12 @@ class Solution:
         for word in words:
             current = set(word.lower())
             
+            # Python set intersection -> & operator
+            # check if current element is equal to one of these computed elements
             if current in (current & first, current & second, current & third):
                 result.append(word)
                 
         return result
+
+
+# Array - Hash Table - String

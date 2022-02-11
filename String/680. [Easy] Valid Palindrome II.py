@@ -14,3 +14,6 @@ class Solution:
                 break
                 
         return s == s[::-1] or r == r[::-1]
+
+
+# Two Pointers - String - Greedy

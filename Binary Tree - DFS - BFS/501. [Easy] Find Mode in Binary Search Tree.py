@@ -15,18 +15,21 @@
 class Solution:
     def findMode(self, root: Optional[TreeNode]) -> List[int]:
         d = {}
-        self.theMost(root, d)
+        self.dfs(root, d)
         
-        theMax = max(d.values())
-        result = [k for k,v in d.items() if v == theMax]
+        mode = max(d.values())
+        result = [k for k,v in d.items() if v == mode]
         return result
     
     
-    def theMost(self, root, d):        
+    def dfs(self, root, d):        
         if not root:
             return
         
-        self.theMost(root.left, d)
-        self.theMost(root.right, d)
+        self.dfs(root.left, d)
+        self.dfs(root.right, d)
         
         d[root.val] = d.get(root.val, 0) + 1
+
+
+# Tree - Binary Tree - Binary Search Tree - Depth-First Search

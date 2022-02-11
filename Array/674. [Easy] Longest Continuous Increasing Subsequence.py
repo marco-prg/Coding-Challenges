@@ -20,3 +20,19 @@ class Solution:
         
         result = max(result, value)
         return result
+
+# Sliding Window solution:
+# Every (continuous) increasing subsequence is disjoint, and the boundary of each such subsequence occurs whenever nums[i-1] >= nums[i].
+# When it does, it marks the start of a new increasing subsequence at nums[i], and we store such i in the variable anchor.
+
+# class Solution:
+#     def findLengthOfLCIS(self, nums: List[int]) -> int:
+#         ans = anchor = 0
+#         for i in range(len(nums)):
+#             if i and nums[i-1] >= nums[i]:
+#                 anchor = i
+#             ans = max(ans, i - anchor + 1)
+#         return ans
+
+
+# Array
