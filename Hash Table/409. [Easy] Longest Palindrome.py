@@ -1,6 +1,8 @@
 # Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
 # Letters are case sensitive, for example, "Aa" is not considered a palindrome here.
 
+import collections
+
 class Solution:
     def longestPalindrome(self, s: str) -> int:
         result = 0
@@ -15,3 +17,6 @@ class Solution:
                 spare = True
             
         return result
+
+
+# Hash Table - String - Greedy

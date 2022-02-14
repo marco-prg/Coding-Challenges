@@ -5,4 +5,6 @@ class Solution:
         a = ''.join([str(n) for n in nums])
         a = a.split('0')
         return max([len(x) for x in a])
-        
+
+
+# Array

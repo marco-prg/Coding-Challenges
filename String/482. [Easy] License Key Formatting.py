@@ -8,6 +8,13 @@
 class Solution:
     def licenseKeyFormatting(self, s: str, k: int) -> str:
         s = s.upper().replace('-', '')
+
+        return "-".join([s[i-k if i > k else 0:i] for i in range(len(s), 0, -k)][::-1])
+
+        
+    def licenseKeyFormatting(self, s: str, k: int) -> str:
+        s = s.upper().replace('-', '')
+
         result = ''
         
         l = len(s)
@@ -27,3 +34,6 @@ class Solution:
             result += '-'
         
         return result[:-1]
+
+
+# String

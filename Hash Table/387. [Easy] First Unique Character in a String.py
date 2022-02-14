@@ -1,6 +1,8 @@
 # Given a string s, find the first non-repeating character in it and return its index. 
 # If it does not exist, return -1.
 
+import collections
+
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         counter = collections.Counter(s)
@@ -10,4 +12,6 @@ class Solution:
                 return i
         
         return -1
-        
+
+
+# Hash Table - String - Queue - Counting        

@@ -5,12 +5,12 @@
 class Solution:
     def arrangeCoins(self, n: int) -> int:
         result = 0
-        c = 1
         
         while n > 0:
-            n = n-c
-            c += 1
+            n -= result + 1
             result += 1
             
-        return result if n == 0 else result -1
-        
+        return result if n == 0 else result - 1
+
+
+# Math - Binary Search   
