@@ -10,3 +10,6 @@ class Solution:
         m = len(candyType)
         
         return min(n, m)
+
+
+# Array - Hash Table

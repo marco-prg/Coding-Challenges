@@ -8,3 +8,6 @@ class Solution:
         while "()" in s or "[]" in s or "{}" in s:
             s = s.replace("()", "").replace("[]", "").replace("{}", "")
         return s == ""
+
+
+# String - Stack

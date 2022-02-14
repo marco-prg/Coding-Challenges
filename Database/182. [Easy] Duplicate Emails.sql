@@ -10,3 +10,6 @@
 
 SELECT Email FROM (SELECT count(*) AS counter, Email FROM Person GROUP BY Email ) AS Table1
 WHERE counter > 1;
+
+
+-- Database

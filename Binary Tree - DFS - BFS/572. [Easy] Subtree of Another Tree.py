@@ -36,4 +36,7 @@ class Solution:
         if root.val != subRoot.val:
             return False
         
-        return self.identical(root.left, subRoot.left) and self.identical(root.right, subRoot.right) 
+        return self.identical(root.left, subRoot.left) and self.identical(root.right, subRoot.right)
+
+
+# Tree - Binary Tree - Depth-First Search - String Matching - Hash Function

@@ -10,3 +10,6 @@ class Solution:
         
         flat = [elem for row in mat for elem in row]
         return [flat[i:i+c] for i in range(0, len(flat), c)]
+
+
+# Array - Matrix - Simulation
