@@ -23,3 +23,6 @@ class Solution:
         dfs(root)
         
         return min(b - a for a, b in zip(values, values[1:]))
+
+
+# Tree - Binary Tree - Binary Search Tree - Depth-First Search - Breadth-First Search

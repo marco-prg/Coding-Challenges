@@ -7,3 +7,6 @@ class Solution:
         temp = [s[i:i+k] for i in range(0, len(s), k)]
         
         return "".join(v if i % 2 else v[::-1] for i,v in enumerate(temp))
+
+
+# String - Two Pointers

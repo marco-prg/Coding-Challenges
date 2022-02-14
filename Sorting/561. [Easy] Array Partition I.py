@@ -5,3 +5,6 @@ class Solution:
     def arrayPairSum(self, nums: List[int]) -> int:
         nums.sort()        
         return sum(v for i,v in enumerate(nums) if not i % 2)
+
+
+# Array - Greedy - Sorting - Counting Sort

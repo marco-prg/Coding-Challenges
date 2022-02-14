@@ -10,15 +10,18 @@
 #         self.right = right
 
 class Solution:
-    maxi = 0
+    diameter = 0
     
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:        
-        self.thePath(root)
-        return self.maxi
+        self.getPath(root)
+        return self.diameter
     
-    def thePath(self, root):
-        l = self.thePath(root.left) + 1 if root.left else 0
-        r = self.thePath(root.right) + 1 if root.right else 0
+    def getPath(self, root):
+        l = self.getPath(root.left) + 1 if root.left else 0
+        r = self.getPath(root.right) + 1 if root.right else 0
         
-        self.maxi = max(self.maxi, l+r)        
+        self.diameter = max(self.diameter, l+r)        
         return max(l, r)
+
+
+# Tree - Binary Tree - Depth-First Search

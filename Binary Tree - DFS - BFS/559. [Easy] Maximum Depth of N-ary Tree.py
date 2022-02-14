@@ -19,3 +19,6 @@ class Solution:
         children = [self.maxDepth(c) for c in root.children]
         
         return max(children) + 1
+
+
+# Tree - Depth-First Search - Breadth-First Search
