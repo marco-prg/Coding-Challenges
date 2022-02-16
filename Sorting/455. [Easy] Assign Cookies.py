@@ -10,14 +10,15 @@ class Solution:
         s.sort()
         
         child = 0   
-        content = 0
         
         for bi in s:
             if child == len(g):
-                return content
+                return child
             
             if bi >= g[child]:
-                content += 1
                 child += 1
             
-        return content
+        return child
+
+
+# Array - Greedy - Sorting

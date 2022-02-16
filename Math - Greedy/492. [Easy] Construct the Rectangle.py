@@ -5,6 +5,8 @@
 # -  The difference between length L and width W should be as small as possible.
 # Return an array [L, W] where L and W are the length and width of the web page you designed in sequence.
 
+import math
+
 class Solution:
     def constructRectangle(self, area: int) -> List[int]:        
         w = int(math.sqrt(area))
@@ -13,3 +15,6 @@ class Solution:
             w -= 1
             
         return area//w, w
+
+
+# Math

@@ -12,3 +12,6 @@ class Solution:
             result += n - minimum
             
         return result
+
+
+# Array - Math

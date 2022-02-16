@@ -14,3 +14,6 @@ class Solution:
             t_pointer += 1
                 
         return s_pointer == len(s)
+
+
+# Two Pointers - Dynamic Programming - String

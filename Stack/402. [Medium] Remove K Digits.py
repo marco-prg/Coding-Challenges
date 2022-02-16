@@ -13,4 +13,4 @@ class Solution:
         return "".join(stack).lstrip("0") or "0"
 
 
-#  String - Stack - Greedy - Monotonic Stack
+# Stack - Monotonic Stack - String - Greedy

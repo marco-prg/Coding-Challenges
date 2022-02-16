@@ -9,9 +9,11 @@ class Solution:
         result = 0
         
         for c in s+t:
-            # The ord() function returns an integer representing the Unicode character.
-            result ^= ord(c)
+            # The ord() function returns an integer representing the Unicode character
+            result ^= ord(c)        # Using XOR operator to match repeated char between s and t
         
-        # The chr() method returns a character (a string) from an integer 
-        # (represents unicode code point of the character).
+        # The chr() method returns a character (a string) from an integer
         return chr(result)
+
+
+# Bit Manipulation - Hash Table - String - Sorting

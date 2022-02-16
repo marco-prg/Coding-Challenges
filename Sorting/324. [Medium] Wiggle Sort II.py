@@ -10,3 +10,6 @@ class Solution:
         # [::2] -> odd positions (1°, 3° ... - indexes: 0, 2 ...), [1::2] -> even positions
         # Reverse ([::-1]) required in order to avoid having adjacent numbers with the same value
         nums[::2], nums[1::2] = nums[:half][::-1], nums[half:][::-1]
+
+
+# Array - Sorting - Quickselect - Divide and Conquer

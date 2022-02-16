@@ -28,3 +28,6 @@ class Solution:
                 right = middle
         
         return left
+
+
+# Binary Search - Interactive

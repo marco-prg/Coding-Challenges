@@ -8,13 +8,13 @@ class Solution:
         arr = []
         
         while num > 0:
-            arr.insert(0, num % 2)
+            arr.append(num % 2)
             num = num // 2
         
         arr = [0 if x else 1 for x in arr]
         
         for i,v in enumerate(arr):
-            result += v * (2 ** (len(arr) - 1 - i))            
+            result += v * (2 ** i)          
         
         return result
         
@@ -22,3 +22,6 @@ class Solution:
     # def findComplement(self, num: int) -> int:        
     #     mask = 1 << (len(bin(num)) - 2)
     #     return (mask - 1) ^ num
+
+
+# Bit Manipulation

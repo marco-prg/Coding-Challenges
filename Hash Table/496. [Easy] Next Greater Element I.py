@@ -31,3 +31,6 @@ class Solution:
                 result.append(-1)
         
         return result
+
+
+# Array - Hash Table - Stack - Monotonic Stack

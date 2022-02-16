@@ -20,3 +20,6 @@ class Solution:
                 break
         
         return n / m == m
+
+
+# Math - Binary Search

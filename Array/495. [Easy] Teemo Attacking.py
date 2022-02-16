@@ -13,3 +13,6 @@ class Solution:
             result += duration if (timeSeries[i-1] - timeSeries[i]) > duration else timeSeries[i-1] - timeSeries[i]
             
         return result
+
+
+# Array - Simulation

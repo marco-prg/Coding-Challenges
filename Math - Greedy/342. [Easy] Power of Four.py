@@ -10,3 +10,6 @@ class Solution:
             num //= 4
             
         return num == 1
+
+
+# Math - Bit Manipulation - Recursion
