@@ -37,21 +37,22 @@ class Solution:
             headB = headB.next
         
         intercept = False
+        i = -1
             
-        while a[-1] == b[-1]:
+        while a[i] == b[i]:
             intercept = True
-            a = a[:-1]
-            b = b[:-1]
+            i -= 1
             
-            if not len(a) or not len(b):
+            if abs(i) > len(a) or abs(i) > len(b):
                 break
         
         if not intercept:
             return None
         
-        lenA = len(a)
-        
-        for i in range(lenA):
+        for _ in range(len(a) + i + 1):
             headC = headC.next
             
         return headC
+
+
+# Hash Table - Linked List - Two Pointers

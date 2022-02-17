@@ -1,4 +1,4 @@
-# Given the root of a binary tree, return the preorder traversal of its nodes' values.
+# Given the root of a binary tree, return the postorder traversal of its nodes' values.
 
 # Definition for a binary tree node.
 # class TreeNode:
@@ -8,17 +8,19 @@
 #         self.right = right
 
 class Solution:
-    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:        
         result = []
         
         if not root:
             return result
+            
+        result.extend(self.postorderTraversal(root.left))
+        result.extend(self.postorderTraversal(root.right))
         
         if root.val:
             result.append(root.val)
-            
-        result.extend(self.preorderTraversal(root.left))
-        result.extend(self.preorderTraversal(root.right))
         
         return result
-        
+
+
+# Stack - Tree - Binary Tree - Depth-First Search        

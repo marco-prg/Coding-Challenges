@@ -4,6 +4,9 @@
 class Solution:
     def getRow(self, rowIndex: int) -> List[int]:
         result = [1]
-        for i in range(rowIndex):
+        for _ in range(rowIndex):
             result = [1] + [c+d for c,d in zip(result, result[1:])] + [1]
         return result
+
+
+# Array - Dynamic programming

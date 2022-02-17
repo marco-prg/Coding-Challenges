@@ -23,3 +23,6 @@ class Solution:
             r += self.maxDepth(root.right)
             
         return max(l, r)
+
+
+# Tree - Binary Tree - Depth-First Search - Breadth-First Search

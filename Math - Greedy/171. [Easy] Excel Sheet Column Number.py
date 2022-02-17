@@ -17,3 +17,6 @@ class Solution:
             result += (ord(v) - 64) * 26 ** (len(columnTitle) - 1 - k)
             
         return result
+
+
+# Math - String

@@ -17,3 +17,6 @@ class Solution:
             result += chr(n % 26 + ord('A'))    # ord('A') = 65
             n //= 26
         return result[::-1]
+
+
+# Math - String

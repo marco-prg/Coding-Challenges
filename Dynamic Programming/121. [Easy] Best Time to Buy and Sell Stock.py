@@ -15,3 +15,6 @@ class Solution:
                 minimum = prices[i]
         
         return result
+
+
+# Array - Dynamic programming

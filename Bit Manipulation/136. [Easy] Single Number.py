@@ -7,3 +7,6 @@ class Solution:
         for n in nums:
             result ^= n
         return result
+
+
+# Array - Bit Manipulation

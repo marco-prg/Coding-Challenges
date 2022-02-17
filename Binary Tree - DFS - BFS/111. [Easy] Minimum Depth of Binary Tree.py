@@ -28,4 +28,6 @@ class Solution:
             return l
             
         return min(l, r)
-        
+
+
+# Tree - Binary Tree - Depth-First Search - Breadth-First Search

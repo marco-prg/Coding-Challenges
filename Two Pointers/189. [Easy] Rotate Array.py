@@ -20,3 +20,6 @@ class Solution:
             j += k                
             n -= k            
             k = k % n
+
+
+# Array - Math - Two Pointers

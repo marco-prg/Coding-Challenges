@@ -16,3 +16,6 @@ class Solution:
         lun = len(nums) // 2
         
         return TreeNode(nums[lun], self.sortedArrayToBST(nums[:lun]), self.sortedArrayToBST(nums[lun+1:]))
+
+
+# Array - Tree - Binary Tree - Binary Search Tree - Divide and Conquer

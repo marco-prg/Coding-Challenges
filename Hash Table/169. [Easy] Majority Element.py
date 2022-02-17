@@ -17,4 +17,6 @@ class Solution:
                     seen_counter -= 1
         
         return current_number
-        
+
+
+# Array - Hash Table - Divide and Conquer - Sorting - Counting

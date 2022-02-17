@@ -9,22 +9,16 @@
 class Solution:
     def reverseBits(self, n: int) -> int:
         l = "{0:b}".format(n)
-        result = 0
-        
-        l2 = len(l)
-        l3 = 32 - l2
-        
-        for i in range(l3):
-            l = '0' + l 
-            
+        l = '0' * (32 - len(l)) + l            
         l = l[::-1]
         
+        result = 0        
         for i in range(len(l)):
             if int(l[i]):
                 result += 2**(31-i)
             
         return result
-        
+    
     
     # Bit manipulation solution
     
@@ -34,3 +28,6 @@ class Solution:
     #     ans = (ans << 1) + (n & 1)
     #     n >>= 1
     # return ans
+
+
+# Divide and Conquer - Bit Manipulation
