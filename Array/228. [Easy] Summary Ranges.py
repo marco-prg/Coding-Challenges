@@ -13,23 +13,16 @@ class Solution:
         if not nums:
             return result
         
-        start = nums[0]
-        end = nums[0]
+        start = end = nums[0]
+        nums = nums[1:] + [nums[-1]]
         
-        for n in nums[1:]:            
-            if n == (end + 1):
-                end = n            
-            else:                
-                if start == end:
-                    result.append(str(start))
-                else:
-                    result.append(str(start) + "->" + str(end))                    
+        for n in nums:           
+            if n != end + 1:
+                result.append(str(start) + ("->" + str(end)) * (start != end))                    
                 start = n
-                end = n
-                
-        if start == end:
-            result.append(str(start))
-        else:
-            result.append(str(start) + "->" + str(end))
+            end = n
         
         return result
+
+
+# Array

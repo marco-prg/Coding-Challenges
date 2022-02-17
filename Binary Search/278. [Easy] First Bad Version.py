@@ -16,12 +16,14 @@ class Solution:
         right = n
         
         while right > left:
-            temp = left + (right - left) // 2
+            m = (right + left) // 2
             
-            if isBadVersion(temp):
-                right = temp
+            if isBadVersion(m):
+                right = m
             else:
-                left = temp + 1
+                left = m + 1
         
         return right
 
+
+# Binary Search - Interactive

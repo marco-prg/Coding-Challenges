@@ -14,3 +14,6 @@ class Solution:
         
         root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
         return root
+
+
+# Tree - Binary Tree - Depth-First Search - Breadth-First Search

@@ -7,9 +7,9 @@ class Solution:
         d = {}
         
         for n in nums:
-            if d.get(n):
-                d[n] += 1
-            else:
-                d[n] = 1
+            d[n] = d.get(n, 0) + 1
         
         return max(d.values()) != 1
+
+
+# Array - Hash Table - Sorting

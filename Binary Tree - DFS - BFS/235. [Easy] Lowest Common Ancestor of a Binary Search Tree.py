@@ -24,4 +24,6 @@ class Solution:
         
         if minimum > val:
             return self.lowestCommonAncestor(root.right, p, q)
-        
+
+
+# Tree - Binary Tree - Binary Search Tree - Depth-First Search        

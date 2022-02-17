@@ -11,4 +11,6 @@ class Solution:
             result += int(i)
             
         return self.addDigits(result)
-        
+
+
+# Math - Simulation - Number Theory

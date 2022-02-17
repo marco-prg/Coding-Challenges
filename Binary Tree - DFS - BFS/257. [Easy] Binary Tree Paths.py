@@ -25,3 +25,6 @@ class Solution:
         
         result = self.thePath(result, c, root.left)
         return self.thePath(result, c, root.right)
+
+
+# Tree - Binary Tree - String - Backtracking - Depth-First Search

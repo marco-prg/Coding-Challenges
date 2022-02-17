@@ -16,4 +16,6 @@ class Solution:
         h = len(a) // 2            
         m = len(a) % 2
         return a[:h+m] == a[h:][::-1]
-        
+
+
+# Linked List - Two Pointers - Stack - Recursion

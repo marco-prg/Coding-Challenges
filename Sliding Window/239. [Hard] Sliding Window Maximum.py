@@ -27,6 +27,9 @@ class Solution:
         return result
 
 
+# Array - Queue - Sliding Window - Heap (Priority Queue) - Monotonic Queue
+
+
 #     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
 #         if k == 1:
 #             return nums

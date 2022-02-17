@@ -5,10 +5,10 @@ class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         result = 0
         
-        for num in range(1, len(nums) + 1):
-            result += num
-            
-        for num in nums:
-            result -= num
+        for i,v in enumerate(nums):
+            result = result + i + 1 - v
             
         return result
+
+
+# Array - Hash Table - Math - Bit Manipulation - Sorting

@@ -2,11 +2,14 @@
 
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
-        dic = {}
+        d = {}
         
         for i, v in enumerate(nums):
-            if v in dic and i - dic[v] <= k:
+            if v in d and i - d[v] <= k:
                 return True
-            dic[v] = i
+            d[v] = i
         
         return False
+
+
+# Array - Hash Table - Sliding Window
