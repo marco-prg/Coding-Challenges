@@ -8,6 +8,7 @@
 # Do not return anything, modify nums1 in-place instead.
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        # Writing the entire nums1 array: each time the greatest element between nums1 and nums2 - starting from the last position -> decreasing indexes
         while m > 0 and n > 0:            
             if nums1[m-1] >= nums2[n-1]:
                 nums1[m+n-1] = nums1[m-1]
@@ -16,5 +17,9 @@ class Solution:
                 nums1[m+n-1] = nums2[n-1]
                 n -= 1
         
+        # Writing the smallest elements of nums2 in nums1 (first n places - if m > 0 elements are already in nums1)
         if n > 0:
             nums1[:n] = nums2[:n]
+
+
+# Array - Two Pointers - Sorting

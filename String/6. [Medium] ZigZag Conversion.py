@@ -23,3 +23,6 @@ class Solution:
             current += increment
             
         return "".join(result)
+    
+
+# String

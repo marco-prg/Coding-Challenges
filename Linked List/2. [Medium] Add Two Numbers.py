@@ -12,19 +12,20 @@ class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         result = 0   
         
-        for elems in [l1, l2]:
+        for elem in [l1, l2]:
             index = 0
-            while elems:
-                result += elems.val * (10 ** index)
-                elems = elems.next
-                index = index + 1
+            while elem:
+                result += elem.val * (10 ** index)
+                elem = elem.next
+                index += 1
                 
-        previous = ListNode(str(result)[0])
-        current = None
-        
-        for digits in str(result)[1:]:
-            current = ListNode(digits)
-            current.next = previous
+        current = None        
+        for i in str(result):
             previous = current
+            current = ListNode(i)
+            current.next = previous
         
-        return current if current else previous
+        return current
+
+
+# Linked List - Math - Recursion

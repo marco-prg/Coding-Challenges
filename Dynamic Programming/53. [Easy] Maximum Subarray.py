@@ -11,3 +11,6 @@ class Solution:
             maxSoFar = max(maxSoFar, maxEndingHere)
             
         return maxSoFar
+
+
+# Array - Divide and Conquer - Dynamic Programming

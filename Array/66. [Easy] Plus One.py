@@ -16,3 +16,6 @@ class Solution:
             digits[pointer] += 1
         
         return digits
+
+
+# Array - Math

@@ -18,3 +18,6 @@ class Solution:
             else:
                 current = current.next
         return head
+
+
+# Linked List
