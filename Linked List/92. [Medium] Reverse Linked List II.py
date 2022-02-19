@@ -43,3 +43,6 @@ class Solution:
         tail.next = cur
         
         return head
+
+
+# Linked List

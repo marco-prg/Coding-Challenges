@@ -9,7 +9,7 @@ class Solution:
         while x / (1 << i) >= (1 << i):
             i += 1
             
-        # binary search        
+        # Binary Search        
         l = 1 << (i - 1) if i > 0 else 0
         r = l << 1
         
@@ -30,3 +30,6 @@ class Solution:
         # while r*r > x:
         #     r = (r + x/r) / 2
         # return r
+
+
+# Math - Binary Search
