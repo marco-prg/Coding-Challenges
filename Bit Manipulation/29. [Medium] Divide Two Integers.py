@@ -13,37 +13,11 @@ class Solution:
         dividend, divisor, result = abs(dividend), abs(divisor), 0
         
         for x in range(32)[::-1]:
-            if dividend - (divisor << x) >= 0:
+            if dividend >= divisor << x:
                 result += 1 << x
                 dividend -= divisor << x
                 
-        return result if not negative else -result
+        return -result if negative else result
 
 
-# Cannot store strings
-#
-# class Solution:
-#     def division(self, dividend, divisor):
-#         result = 0        
-#         while dividend >= divisor:
-#             dividend -= divisor
-#             result += 1        
-#         return str(result), str(dividend)
-    
-#     def divide(self, dividend: int, divisor: int) -> int:
-#         if dividend == -2147483648 and divisor == -1:
-#             return -dividend - 1
-        
-#         negative = (dividend >= 0) != (divisor > 0)
-#         dividend = abs(dividend)
-#         divisor = abs(divisor)
-        
-#         result = "0"
-#         current = ""
-        
-#         for d in str(dividend):
-#             current += d
-#             r, current = self.division(int(current), divisor)
-#             result += r           
-        
-#         return int(result) if not negative else -int(result)
+# Math - Bit Manipulation

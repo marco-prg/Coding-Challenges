@@ -34,6 +34,10 @@ class Solution:
                 result.append(matrix[-k].pop(0))
         
         return result
-    
+
+  
 #   def spiralOrder(self, matrix):
 #       return matrix and [*matrix.pop(0)] + self.spiralOrder([*zip(*matrix)][::-1])
+
+
+# Array - Matrix - Simulation
