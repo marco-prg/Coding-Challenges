@@ -24,4 +24,4 @@ def cookies(k, A):
     return count if minimum >= k else -1
 
 
-# Sorting - Heap
+# Sorting - Heap (Priority Queue)
