@@ -9,6 +9,7 @@ class Solution:
         if not nums:
             return result
         
+        # Two binary searches (Explanation: page 149 Skiena)
         left = 0
         right = len(nums) - 1
         
