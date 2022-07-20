@@ -8,8 +8,10 @@
 --  | 3  | a@b.com |
 --  +----+---------+
 
-SELECT Email FROM (SELECT count(*) AS counter, Email FROM Person GROUP BY Email ) AS Table1
-WHERE counter > 1;
+SELECT email
+FROM person
+GROUP BY email
+HAVING count(email) > 1;
 
 
 -- Database
