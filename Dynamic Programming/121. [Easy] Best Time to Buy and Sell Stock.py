@@ -7,12 +7,9 @@ class Solution:
         result = 0
         minimum = prices[0]
         
-        for i in range(1, len(prices)):
-            profit = prices[i] - minimum            
-            result = max(result, profit)
-            
-            if prices[i] < minimum:
-                minimum = prices[i]
+        for elem in prices[1:]:
+            result = max(result, elem - minimum)
+            minimum = min(minimum, elem)
         
         return result
 
