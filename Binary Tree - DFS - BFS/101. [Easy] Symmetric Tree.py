@@ -22,16 +22,16 @@ class Solution:
                 if node:
                     nodes.append(node.left)
                     nodes.append(node.right)
+
+        # Check current level symmetry
+        mid = len(values) // 2            
+        result = values[:mid + len(values) % 2] == values[mid:][::-1]        
         
         # Check if it is the deepest level  
-        the_end = True
-        if any(nodes):
-            the_end = False
-
-        # Check current level simmetry            
-        result = values[:len(values)//2 + len(values)%2] == values[len(values)//2:][::-1]
+        end = not any(nodes)
         
-        if the_end or not result:
+        # Or not symmetric
+        if end or not result:
             return result
         else:
             return self.checkSymmetric(nodes)

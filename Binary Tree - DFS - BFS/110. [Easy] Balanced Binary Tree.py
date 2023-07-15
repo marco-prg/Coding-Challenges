@@ -11,10 +11,7 @@
 
 class Solution:
     def isBalanced(self, root: TreeNode) -> bool:
-        if root == None:
-            return True        
-        return True if self.height(root) > 0 else False
-        
+        return self.height(root) >= 0        
         
     def height(self, root: TreeNode) -> int:
         if root == None:
@@ -26,12 +23,10 @@ class Solution:
         l = self.height(root.left)
         r = self.height(root.right)
         
-        if l < 0 or r < 0:
-            return -1        
-        if abs(l - r) <= 1:
-            return 1 + max(l,r)
-        else:
-            return -1
+        if abs(l - r) > 1 or l < 0 or r < 0:
+            return -1       
+        
+        return 1 + max(l,r)       
 
 
 # Tree - Binary Tree - Depth-First Search        

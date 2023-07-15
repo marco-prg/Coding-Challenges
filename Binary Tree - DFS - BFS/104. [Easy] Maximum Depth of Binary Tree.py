@@ -13,14 +13,9 @@ class Solution:
         if not root:
             return 0
         
-        l = 1
-        r = 1
-        
-        if root.left:
-            l += self.maxDepth(root.left)
-        
-        if root.right:
-            r += self.maxDepth(root.right)
+        l = r = 1        
+        l += self.maxDepth(root.left)
+        r += self.maxDepth(root.right)
             
         return max(l, r)
 
