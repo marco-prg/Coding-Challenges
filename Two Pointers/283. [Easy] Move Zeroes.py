@@ -5,14 +5,13 @@
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         pointer = 0
+
+        for n in nums:
+            if n:
+                nums[pointer] = n
+                pointer += 1
         
-        for i,v in enumerate(nums):
-            if v:
-                nums[i + pointer] = v
-            else:
-                pointer -= 1
-                
-        for i in range(-1, pointer - 1, -1):
+        for i in range(pointer, len(nums)):
             nums[i] = 0
 
 
